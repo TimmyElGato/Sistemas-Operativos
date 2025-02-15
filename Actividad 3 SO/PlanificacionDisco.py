@@ -42,7 +42,7 @@ def scan(requests, head, disk_size=199):
     
     return sequence, total_distance
 
-if __name__ == "__main__":
+def main():
     requests = [95, 180, 34, 119, 11, 123, 62, 64]
     head = 50
     
