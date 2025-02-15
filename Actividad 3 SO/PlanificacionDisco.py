@@ -45,12 +45,15 @@ def scan(requests, head, disk_size=199):
 def main():
     requests = [95, 180, 34, 119, 11, 123, 62, 64]
     head = 50
-    
+
     results = {
         'FCFS': fcfs(requests, head),
         'SSTF': sstf(requests, head),
         'SCAN': scan(requests, head)
     }
-    
+
     for algo, (sequence, distance) in results.items():
         print(f"{algo} - Secuencia: {sequence} - Total recorrido: {distance}")
+
+if __name__ == "__main__":
+    main()
